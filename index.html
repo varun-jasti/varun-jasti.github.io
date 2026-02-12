@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Viswanadh Varun Kumar Jasti - AI/ML Engineer specializing in Computer Vision and Multimodal Machine Learning">
+    <meta name="author" content="Viswanadh Varun Kumar Jasti">
+    <title>Viswanadh Jasti | AI/ML Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="5" fill="currentColor"/>
+            <line x1="10" y1="1" x2="10" y2="3" stroke="currentColor" stroke-width="2"/>
+            <line x1="10" y1="17" x2="10" y2="19" stroke="currentColor" stroke-width="2"/>
+            <line x1="1" y1="10" x2="3" y2="10" stroke="currentColor" stroke-width="2"/>
+            <line x1="17" y1="10" x2="19" y2="10" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M17 10.5C15.5 16 9 17 5 14C1 11 2 4.5 7.5 3C6 3 3 5 3 9C3 13 6 16 10 16C14 16 17 13 17 10.5Z" fill="currentColor"/>
+        </svg>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">VJ<span class="accent">.</span></a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hi, I'm</span>
+                        <span class="name">Viswanadh Jasti</span>
+                        <span class="subtitle">AI/ML Engineer</span>
+                    </h1>
+                    <p class="hero-description">
+                        Graduate Computer Science student specializing in <span class="highlight">computer vision</span>, 
+                        <span class="highlight">multimodal machine learning</span>, and <span class="highlight">deep learning systems</span>. 
+                        Building efficient, adaptive, and scalable AI solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                    
+                    <!-- SOCIAL LINKS - NEW! -->
+                    <div class="social-links">
+                        <a href="https://github.com/varun-jasti" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/varun-kumar-jasti" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.5 2h-17C2.119 2 1 3.119 1 4.5v17C1 22.881 2.119 24 3.5 24h17c1.381 0 2.5-1.119 2.5-2.5v-17C23 3.119 21.881 2 20.5 2zM8 19H5v-9h3v9zM6.5 8.75c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zM19 19h-3v-4.74c0-1.128-.021-2.578-1.571-2.578-1.572 0-1.813 1.228-1.813 2.496V19h-3v-9h2.881v1.302h.041c.401-.761 1.379-1.562 2.839-1.562 3.037 0 3.597 2 3.597 4.598V19z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:varunjasti3@gmail.com" aria-label="Email" title="Email">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 5L12 13L21 5M3 5V19H21V5H3Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">3.9</span>
+                            <span class="stat-label">GPA</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2</span>
+                            <span class="stat-label">Companies</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <!-- 
+                    ========================================================
+                    📸 PHOTO SECTION - TO ADD YOUR PHOTO, FOLLOW THESE STEPS:
+                    ========================================================
+                    1. Add your photo file (e.g., photo.jpg) to the same folder as index.html
+                    2. Uncomment the lines below (remove the surrounding comment tags)
+                    3. Replace "your-photo.jpg" with your actual filename
+                    4. Optional: To hide the code window below, add style="display:none;" to it
+                    
+                    <div class="profile-photo-container">
+                        <div class="profile-photo">
+                            <img src="your-photo.jpg" alt="Viswanadh Jasti">
+                            <div class="photo-glow"></div>
+                        </div>
+                    </div>
+                    
+                    ========================================================
+                    -->
+                    
+                    <!-- Code Window -->
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-controls">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="window-title">model_training.py</span>
+                        </div>
+                        <div class="code-content">
+                            <code><span class="code-keyword">import</span> torch<br>
+<span class="code-keyword">from</span> models <span class="code-keyword">import</span> YOLOv11<br><br>
+<span class="code-comment"># Initialize model</span><br>
+model = YOLOv11(<span class="code-string">'yolov11n.pt'</span>)<br><br>
+<span class="code-comment"># Train on custom dataset</span><br>
+results = model.train(<br>
+&nbsp;&nbsp;data=<span class="code-string">'dataset.yaml'</span>,<br>
+&nbsp;&nbsp;epochs=<span class="code-number">100</span>,<br>
+&nbsp;&nbsp;imgsz=<span class="code-number">640</span><br>
+)<br><br>
+<span class="code-keyword">print</span>(<span class="code-string">f"mAP: {results.maps}"</span>)</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a graduate Computer Science student at the <strong>University of Central Florida</strong> with a passion for 
+                        pushing the boundaries of artificial intelligence. My work focuses on creating practical, real-world solutions 
+                        using cutting-edge computer vision and multimodal machine learning techniques.
+                    </p>
+                    <p>
+                        With hands-on experience at <strong>Prolifics</strong> and <strong>ValueText</strong>, I've developed end-to-end 
+                        ML pipelines for complex vision tasks, from dataset preparation and model training to deployment and optimization. 
+                        I'm particularly interested in foundation models, efficient AI systems, and the intersection of vision and language.
+                    </p>
+                    <p>
+                        When I'm not training models or debugging pipelines, you'll find me exploring new ML research papers, 
+                        contributing to open-source projects, or experimenting with the latest AI frameworks.
+                    </p>
+                    <div class="about-links">
+                        <a href="mailto:varunjasti3@gmail.com" class="about-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M2 4L10 11L18 4M2 4V16H18V4H2Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            Email
+                        </a>
+                        <a href="https://github.com/varun-jasti" target="_blank" rel="noopener noreferrer" class="about-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0110 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/varun-kumar-jasti" target="_blank" rel="noopener noreferrer" class="about-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M17.5 0h-15C1.119 0 0 1.119 0 2.5v15C0 18.881 1.119 20 2.5 20h15c1.381 0 2.5-1.119 2.5-2.5v-15C20 1.119 18.881 0 17.5 0zM6 17H3V7.5h3V17zM4.5 6.25c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zM17 17h-3v-4.74c0-1.128-.021-2.578-1.571-2.578-1.572 0-1.813 1.228-1.813 2.496V17h-3V7.5h2.881v1.302h.041c.401-.761 1.379-1.562 2.839-1.562 3.037 0 3.597 2 3.597 4.598V17z"/>
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <!-- <a href="tel:+14074481529" class="about-link">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M2 3C2 2.448 2.448 2 3 2H6.5C6.89 2 7.231 2.266 7.326 2.649L8.5 7.5L6.5 9C7.5 11.5 9 13 11.5 14L13 12L17.851 13.174C18.234 13.269 18.5 13.61 18.5 14V17C18.5 17.552 18.052 18 17.5 18H15C7.82 18 2 12.18 2 5V3Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            Phone
+                        </a> -->
+                    </div>
+                </div>
+                <div class="about-education">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h4>University of Central Florida</h4>
+                            <span class="education-date">Expected May 2027</span>
+                        </div>
+                        <p class="education-degree">Master's in Computer Science</p>
+                        <p class="education-gpa">GPA: 3.9 / 4.0</p>
+                        <p class="education-location">Orlando, Florida, USA</p>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-header">
+                            <h4>Parul University</h4>
+                            <span class="education-date">June 2020 - May 2024</span>
+                        </div>
+                        <p class="education-degree">B. Tech in Computer Science</p>
+                        <p class="education-gpa">GPA: 3.4 / 4.0</p>
+                        <p class="education-location">Gujarat, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>AI/ML Engineer</h3>
+                                <h4>Prolifics</h4>
+                            </div>
+                            <span class="timeline-date">Jan 2025 - Mar 2025</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Developed plan-classification and visual understanding system using <strong>Vision-Language Models (Florence-2)</strong> and <strong>YOLOv11</strong></li>
+                            <li>Built end-to-end computer vision pipelines including data preprocessing, model training, evaluation, and inference optimization</li>
+                            <li>Designed model evaluation workflows using precision-recall curves and confusion matrices</li>
+                            <li>Enhanced automation and model orchestration to reduce manual intervention</li>
+                            <li>Technologies: Python, AWS, YOLO, Multimodal Models</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Software Development Intern</h3>
+                                <h4>ValueText Pvt Ltd</h4>
+                            </div>
+                            <span class="timeline-date">June 2024 - Dec 2024</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Analyzed usage patterns and operational issues using <strong>Python</strong> and <strong>SQL</strong></li>
+                            <li>Assisted backend development using <strong>Flask</strong> and <strong>Django</strong>, implementing APIs and optimizing database queries</li>
+                            <li>Collaborated with cross-functional teams to translate requirements into technical solutions</li>
+                            <li>Gained experience integrating backend services with application workflows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: DetectX -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="5" y="5" width="30" height="30" stroke="currentColor" stroke-width="2"/>
+                            <rect x="12" y="12" width="8" height="8" fill="currentColor"/>
+                            <rect x="22" y="20" width="8" height="8" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>DetectX – Unified Image Processing Platform</h3>
+                    <p class="project-description">
+                        A comprehensive computer vision platform supporting object detection, segmentation, classification, 
+                        and pose estimation using YOLO-based models with a Flask-based web interface.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">YOLOv8</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">OpenCV</span>
+                    </div>
+                    <ul class="project-highlights">
+                        <li>Trained and fine-tuned models on COCO, CIFAR, ImageNet datasets</li>
+                        <li>Implemented precision-recall analysis and confusion matrices</li>
+                        <li>Built unified web interface for multiple vision tasks</li>
+                    </ul>
+                    <!-- GITHUB LINKS - NEW! -->
+                    <div class="project-links">
+                        <a href="https://github.com/varun-jasti/DetectX" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
+                                <path d="M9 0C4.029 0 0 4.029 0 9c0 3.978 2.579 7.35 6.155 8.541.45.083.614-.195.614-.434 0-.213-.008-.78-.012-1.53-2.504.544-3.032-1.206-3.032-1.206-.409-1.04-.999-1.317-.999-1.317-.817-.559.062-.547.062-.547.903.063 1.378.927 1.378.927.803 1.377 2.107.979 2.619.748.082-.581.314-.979.572-1.203-2-.228-4.1-.999-4.1-4.449 0-.982.351-1.786.927-2.415-.093-.228-.402-1.143.088-2.383 0 0 .756-.242 2.475.923A8.622 8.622 0 019 4.352c.765.004 1.536.104 2.254.302 1.718-1.165 2.473-.923 2.473-.923.491 1.24.182 2.155.089 2.383.577.629.926 1.433.926 2.415 0 3.458-2.105 4.218-4.11 4.441.323.278.611.827.611 1.667 0 1.203-.011 2.173-.011 2.469 0 .241.163.521.619.433C15.423 16.348 18 12.977 18 9c0-4.971-4.029-9-9-9z"/>
+                            </svg>
+                            <span>View Code</span>
+                        </a>
+                        <a href="https://github.com/varun-jasti/DetectX#readme" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3H15M3 3V15M15 3V15M15 15H3"/>
+                            </svg>
+                            <span>Documentation</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Pixel2Shape -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 5L35 15V25L20 35L5 25V15L20 5Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="20" cy="20" r="5" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Pixel2Shape – 2D to 3D Reconstruction</h3>
+                    <p class="project-description">
+                        Advanced ML system for generating 3D object views from single 2D images using diffusion models, 
+                        depth estimation, and geometric reconstruction techniques.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">Diffusion Models</span>
+                        <span class="tag">OpenCV</span>
+                    </div>
+                    <ul class="project-highlights">
+                        <li>Feature extraction and depth estimation pipeline</li>
+                        <li>Interactive web interface for 3D visualization</li>
+                        <li>Comparative analysis of reconstruction strategies</li>
+                    </ul>
+                    <!-- GITHUB LINKS - NEW! -->
+                    <div class="project-links">
+                        <a href="https://github.com/varun-jasti/Pixel_2_Shape" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
+                                <path d="M9 0C4.029 0 0 4.029 0 9c0 3.978 2.579 7.35 6.155 8.541.45.083.614-.195.614-.434 0-.213-.008-.78-.012-1.53-2.504.544-3.032-1.206-3.032-1.206-.409-1.04-.999-1.317-.999-1.317-.817-.559.062-.547.062-.547.903.063 1.378.927 1.378.927.803 1.377 2.107.979 2.619.748.082-.581.314-.979.572-1.203-2-.228-4.1-.999-4.1-4.449 0-.982.351-1.786.927-2.415-.093-.228-.402-1.143.088-2.383 0 0 .756-.242 2.475.923A8.622 8.622 0 019 4.352c.765.004 1.536.104 2.254.302 1.718-1.165 2.473-.923 2.473-.923.491 1.24.182 2.155.089 2.383.577.629.926 1.433.926 2.415 0 3.458-2.105 4.218-4.11 4.441.323.278.611.827.611 1.667 0 1.203-.011 2.173-.011 2.469 0 .241.163.521.619.433C15.423 16.348 18 12.977 18 9c0-4.971-4.029-9-9-9z"/>
+                            </svg>
+                            <span>View Code</span>
+                        </a>
+                        <a href="https://github.com/varun-jasti/Pixel_2_Shape#readme" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3H15M3 3V15M15 3V15M15 15H3"/>
+                            </svg>
+                            <span>Documentation</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: BookHub -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="8" y="5" width="24" height="30" stroke="currentColor" stroke-width="2"/>
+                            <line x1="12" y1="12" x2="28" y2="12" stroke="currentColor" stroke-width="2"/>
+                            <line x1="12" y1="18" x2="24" y2="18" stroke="currentColor" stroke-width="2"/>
+                            <line x1="12" y1="24" x2="20" y2="24" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>BookHub – Online Bookstore</h3>
+                    <p class="project-description">
+                        Full-stack web application with user authentication, product browsing, cart management, 
+                        and order processing using Flask and SQLAlchemy.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Flask</span>
+                        <span class="tag">SQLAlchemy</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <ul class="project-highlights">
+                        <li>RESTful API design and database modeling</li>
+                        <li>Responsive UI with Bootstrap</li>
+                        <li>Optimized SQL queries for inventory management</li>
+                    </ul>
+                    <!-- GITHUB LINKS - NEW! -->
+                    <div class="project-links">
+                        <a href="https://github.com/varun-jasti/Book-Hub" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor">
+                                <path d="M9 0C4.029 0 0 4.029 0 9c0 3.978 2.579 7.35 6.155 8.541.45.083.614-.195.614-.434 0-.213-.008-.78-.012-1.53-2.504.544-3.032-1.206-3.032-1.206-.409-1.04-.999-1.317-.999-1.317-.817-.559.062-.547.062-.547.903.063 1.378.927 1.378.927.803 1.377 2.107.979 2.619.748.082-.581.314-.979.572-1.203-2-.228-4.1-.999-4.1-4.449 0-.982.351-1.786.927-2.415-.093-.228-.402-1.143.088-2.383 0 0 .756-.242 2.475.923A8.622 8.622 0 019 4.352c.765.004 1.536.104 2.254.302 1.718-1.165 2.473-.923 2.473-.923.491 1.24.182 2.155.089 2.383.577.629.926 1.433.926 2.415 0 3.458-2.105 4.218-4.11 4.441.323.278.611.827.611 1.667 0 1.203-.011 2.173-.011 2.469 0 .241.163.521.619.433C15.423 16.348 18 12.977 18 9c0-4.971-4.029-9-9-9z"/>
+                            </svg>
+                            <span>View Code</span>
+                        </a>
+                        <a href="https://github.com/varun-jasti/Book-Hub#readme" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3H15M3 3V15M15 3V15M15 15H3"/>
+                            </svg>
+                            <span>Documentation</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Computer Vision & ML
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Object Detection</span>
+                        <span class="skill-tag">Image Segmentation</span>
+                        <span class="skill-tag">Image Classification</span>
+                        <span class="skill-tag">Pose Estimation</span>
+                        <span class="skill-tag">Motion Analysis</span>
+                        <span class="skill-tag">Model Evaluation</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="3" y="3" width="18" height="18" stroke="currentColor" stroke-width="2"/>
+                            <path d="M9 9H15M9 12H15M9 15H12" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        ML Tools & Frameworks
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">ONNX</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Multimodal & Vision-Language
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Florence-2</span>
+                        <span class="skill-tag">Vision-Language Models</span>
+                        <span class="skill-tag">Image-Text Understanding</span>
+                        <span class="skill-tag">CV + NLP Pipelines</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="4" y="4" width="16" height="16" stroke="currentColor" stroke-width="2"/>
+                            <path d="M4 10H20M10 4V20" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Backend & Data
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 3L21 21M3 21L21 3" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Tools & Platforms
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">PyCharm</span>
+                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">Google Colab</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                            <path d="M12 1V4M12 20V23M4.22 4.22L6.34 6.34M17.66 17.66L19.78 19.78M1 12H4M20 12H23M4.22 19.78L6.34 17.66M17.66 6.34L19.78 4.22" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Practices
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">End-to-End ML Pipelines</span>
+                        <span class="skill-tag">Experiment Tracking</span>
+                        <span class="skill-tag">Agile Collaboration</span>
+                        <span class="skill-tag">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-intro">
+                        I'm currently looking for new opportunities in AI/ML and Computer Vision. 
+                        Whether you have a question, want to collaborate, or just want to say hi, 
+                        feel free to reach out!
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:varunjasti3@gmail.com" class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 5L12 13L21 5M3 5V19H21V5H3Z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>varunjasti3@gmail.com</p>
+                            </div>
+                        </a>
+                        <!-- <a href="tel:+14074481529" class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 5C3 3.895 3.895 3 5 3H8.5C9.052 3 9.528 3.395 9.659 3.939L11 9L8.5 11C9.5 13.5 11 15 13.5 16L16 13.5L21.061 14.841C21.605 14.972 22 15.448 22 16V19C22 20.105 21.105 21 20 21H17C8.716 21 2 14.284 2 6V5H3Z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+1 (407) 448-1529</p>
+                            </div>
+                        </a> -->
+                        <a href="https://github.com/varun-jasti" target="_blank" rel="noopener noreferrer" class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <p>github.com/varun-jasti</p>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/varun-kumar-jasti" target="_blank" rel="noopener noreferrer" class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.5 2h-17C2.119 2 1 3.119 1 4.5v17C1 22.881 2.119 24 3.5 24h17c1.381 0 2.5-1.119 2.5-2.5v-17C23 3.119 21.881 2 20.5 2zM8 19H5v-9h3v9zM6.5 8.75c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zM19 19h-3v-4.74c0-1.128-.021-2.578-1.571-2.578-1.572 0-1.813 1.228-1.813 2.496V19h-3v-9h2.881v1.302h.041c.401-.761 1.379-1.562 2.839-1.562 3.037 0 3.597 2 3.597 4.598V19z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/varun-kumar-jasti</p>
+                            </div>
+                        </a>
+                        <!-- <div class="contact-method">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Orlando, Florida, USA</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Viswanadh Jasti. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/varun-jasti" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/varun-kumar-jasti" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="mailto:varunjasti3@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
