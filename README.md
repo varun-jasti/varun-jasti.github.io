@@ -42,6 +42,7 @@ No build tools, package manager, or dependencies — open `index.html` and it ru
 ├── style.css           # Theming, layout, and mobile-first responsive rules
 ├── script.js            # Theme toggle, nav, animations, interactions
 ├── profile-photo.jpg    # Hero section profile photo
+├── .github/workflows/pages.yml  # GitHub Actions deployment workflow
 └── README.md
 ```
 
@@ -70,7 +71,9 @@ No build step required. Either:
 
 ## Deployment
 
-Hosted on **GitHub Pages**, deploying automatically from the `main` branch on every push (Settings → Pages → Source: *Deploy from a branch* → `main` / `/(root)`).
+Hosted on **GitHub Pages**, currently configured to deploy from the `main` branch on every push (Settings → Pages → Source: *Deploy from a branch* → `main` / `/(root)`).
+
+The repo also includes a GitHub Actions workflow at `.github/workflows/pages.yml` that builds and deploys via `actions/deploy-pages`, with an automatic retry if the first deploy attempt times out. To use it instead of branch-based deployment, switch **Settings → Pages → Source** to **GitHub Actions**.
 
 ## Contact
 
