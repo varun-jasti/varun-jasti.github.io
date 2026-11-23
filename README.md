@@ -2,7 +2,7 @@
 
 This is the portfolio I built to share my work in front-end development and machine learning. I wanted one place where I could show my experience, projects, skills, and current research without using a template or a front-end framework.
 
-The site is built with HTML, CSS, and JavaScript. I wrote the layout as mobile-first CSS, added light and dark themes, and used JavaScript for the navigation, scroll effects, counters, and small interactions.
+The site is built with HTML, CSS, and JavaScript. I wrote the layout as mobile-first CSS, added light and dark themes, and used JavaScript for accessible navigation, section highlighting, and small interactions.
 
 Live site: [varun-jasti.github.io](https://varun-jasti.github.io)
 
@@ -20,6 +20,7 @@ Live site: [varun-jasti.github.io](https://varun-jasti.github.io)
 - `style.css` contains the layout, themes, animations, and responsive styles.
 - `script.js` handles the menu, theme switcher, scrolling, and page interactions.
 - `profile-photo.jpg` is the photo used in the hero section.
+- `favicon.svg` contains the VJ browser icon.
 
 ## Run it locally
 

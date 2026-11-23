@@ -3,17 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Viswanadh Varun Kumar Jasti - Front-End Developer & AI/ML Researcher specializing in responsive web design, UI/UX, and machine learning, currently learning React and Node.js for MERN stack development">
+    <meta name="description" content="Portfolio of Viswanadh Jasti, a front-end developer and AI/ML researcher at the University of Central Florida. Explore his experience, research, and selected projects.">
     <meta name="author" content="Viswanadh Varun Kumar Jasti">
+    <meta name="theme-color" content="#0066ff">
+    <link rel="canonical" href="https://varun-jasti.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://varun-jasti.github.io/">
+    <meta property="og:title" content="Viswanadh Jasti | Front-End Developer & AI/ML Researcher">
+    <meta property="og:description" content="Front-end development, machine-learning research, and selected projects by Viswanadh Jasti.">
+    <meta property="og:image" content="https://varun-jasti.github.io/profile-photo.jpg">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="714">
+    <meta property="og:image:alt" content="Portrait of Viswanadh Jasti">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Viswanadh Jasti | Front-End Developer & AI/ML Researcher">
+    <meta name="twitter:description" content="Front-end development, machine-learning research, and selected projects by Viswanadh Jasti.">
+    <meta name="twitter:image" content="https://varun-jasti.github.io/profile-photo.jpg">
     <title>Viswanadh Jasti | Front-End Developer & AI/ML Researcher</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- Theme Toggle -->
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
         <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
             <circle cx="10" cy="10" r="5" fill="currentColor"/>
             <line x1="10" y1="1" x2="10" y2="3" stroke="currentColor" stroke-width="2"/>
@@ -27,7 +43,7 @@
     </button>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Primary navigation">
         <div class="nav-container">
             <a href="#home" class="logo">VJ<span class="accent">.</span></a>
             <ul class="nav-menu" id="navMenu">
@@ -38,14 +54,15 @@
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation menu" aria-controls="navMenu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
         </div>
     </nav>
 
+    <main id="main-content">
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
@@ -57,18 +74,17 @@
                         <span class="subtitle">Front-End Developer & AI/ML Researcher</span>
                     </h1>
                     <p class="hero-description">
-                        Graduate Computer Science student with demonstrated expertise in <span class="highlight">front-end development</span>,
-                        <span class="highlight">UI/UX design</span>, and <span class="highlight">responsive web design</span>, alongside hands-on
-                        research experience in <span class="highlight">machine learning</span> and <span class="highlight">deep generative models</span>.
-                        Currently learning <span class="highlight">React</span> and <span class="highlight">Node.js</span> to transition into full MERN
-                        stack development — using AI-assisted tools to accelerate that learning and prototyping process.
+                        I build responsive web interfaces and research machine-learning systems at the University of Central Florida.
+                        My work spans <span class="highlight">HTML, CSS, and JavaScript</span>, large-scale data pipelines, and
+                        <span class="highlight">deep generative models</span>. I am currently expanding my full-stack skills with
+                        <span class="highlight">React and Node.js</span>.
                     </p>
                     <div class="hero-buttons">
                         <a href="#contact" class="btn btn-primary">Get in Touch</a>
                         <a href="#projects" class="btn btn-secondary">View Projects</a>
+                        <a href="mailto:varunjasti3@gmail.com?subject=Resume%20request" class="btn btn-text">Request Résumé</a>
                     </div>
                     
-                    <!-- SOCIAL LINKS - NEW! -->
                     <div class="social-links">
                         <a href="https://github.com/varun-jasti" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -104,9 +120,8 @@
                 </div>
                 <div class="hero-visual">
                     <div class="profile-photo-container">
-                        <div class="photo-glow"></div>
                         <div class="profile-photo">
-                            <img src="profile-photo.jpg" alt="Viswanadh Jasti">
+                            <img src="profile-photo.jpg" alt="Portrait of Viswanadh Jasti" width="1280" height="714" decoding="async" fetchpriority="high">
                         </div>
                     </div>
 
@@ -135,10 +150,6 @@ results = model.train(<br>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-arrow"></div>
-        </div>
     </section>
 
     <!-- About Section -->
@@ -148,26 +159,18 @@ results = model.train(<br>
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a graduate Computer Science student at the <strong>University of Central Florida</strong> (3.9/4.0 GPA) with
-                        demonstrated expertise in <strong>front-end development</strong>, <strong>UI/UX design</strong>, and
-                        <strong>responsive web design</strong>. I'm proficient in HTML, CSS, JavaScript, and web technologies, with a
-                        proven ability to build interactive user interfaces and customer-facing applications.
+                        I'm a graduate Computer Science student at the <strong>University of Central Florida</strong> with a 3.9/4.0 GPA.
+                        I have professional experience building responsive interfaces with HTML, CSS, and JavaScript, and I care about
+                        clear structure, accessibility, and interfaces that work well across screen sizes.
                     </p>
                     <p>
-                        I'm also an active researcher in machine learning and AI, with hands-on experience designing and training
-                        deep learning models — including generative models processing tens of millions of real-world records. I'm
-                        currently learning <strong>React</strong> and <strong>Node.js</strong> to transition into full <strong>MERN stack</strong>
-                        development, alongside hands-on experience at <strong>Cognizant</strong> and <strong>ValueText</strong> building
-                        end-to-end ML pipelines and connecting them to user-facing interfaces.
+                        At UCF's Human Mobility Lab, I work with deep generative models and data pipelines that process tens of millions
+                        of GPS records. That research has strengthened my experience with Python, PyTorch, feature engineering, GPU
+                        training, and model evaluation.
                     </p>
                     <p>
-                        I'm a strong problem-solver with attention to detail, responsive design expertise, and a passion for creating
-                        intuitive, accessible user experiences — increasingly using AI-assisted tools to speed up learning, design, and
-                        prototyping.
-                    </p>
-                    <p>
-                        When I'm not training models or shipping UI, you'll find me exploring new ML research papers,
-                        contributing to open-source projects, or experimenting with the latest AI frameworks and design tools.
+                        I'm continuing to learn React, Node.js, Express, and MongoDB so I can build complete web applications and connect
+                        research systems to useful user-facing tools.
                     </p>
                     <div class="about-links">
                         <a href="mailto:varunjasti3@gmail.com" class="about-link">
@@ -188,12 +191,6 @@ results = model.train(<br>
                             </svg>
                             LinkedIn
                         </a>
-                        <!-- <a href="tel:+14079175782" class="about-link">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M2 3C2 2.448 2.448 2 3 2H6.5C6.89 2 7.231 2.266 7.326 2.649L8.5 7.5L6.5 9C7.5 11.5 9 13 11.5 14L13 12L17.851 13.174C18.234 13.269 18.5 13.61 18.5 14V17C18.5 17.552 18.052 18 17.5 18H15C7.82 18 2 12.18 2 5V3Z" stroke="currentColor" stroke-width="2"/>
-                            </svg>
-                            Phone
-                        </a> -->
                     </div>
                 </div>
                 <div class="about-education">
@@ -444,11 +441,11 @@ results = model.train(<br>
                             </svg>
                             <span>View Code</span>
                         </a>
-                        <a href="https://github.com/varun-jasti/Youtube-UI-UX#readme" target="_blank" rel="noopener noreferrer" class="project-link">
+                        <a href="https://varun-jasti.github.io/Youtube-UI-UX/Site/" target="_blank" rel="noopener noreferrer" class="project-link">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M3 3H15M3 3V15M15 3V15M15 15H3"/>
                             </svg>
-                            <span>Documentation</span>
+                            <span>Live Demo</span>
                         </a>
                     </div>
                 </div>
@@ -710,9 +707,8 @@ results = model.train(<br>
             <div class="contact-content">
                 <div class="contact-info">
                     <p class="contact-intro">
-                        I'm currently looking for new opportunities in front-end development and AI/ML research.
-                        Whether you have a question, want to collaborate, or just want to say hi,
-                        feel free to reach out!
+                        I'm currently looking for front-end development, full-stack, and AI/ML research opportunities.
+                        The fastest way to reach me is by email or LinkedIn.
                     </p>
                     <div class="contact-methods">
                         <a href="mailto:varunjasti3@gmail.com" class="contact-method">
@@ -726,17 +722,6 @@ results = model.train(<br>
                                 <p>varunjasti3@gmail.com</p>
                             </div>
                         </a>
-                        <!-- <a href="tel:+14079175782" class="contact-method">
-                            <div class="contact-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M3 5C3 3.895 3.895 3 5 3H8.5C9.052 3 9.528 3.395 9.659 3.939L11 9L8.5 11C9.5 13.5 11 15 13.5 16L16 13.5L21.061 14.841C21.605 14.972 22 15.448 22 16V19C22 20.105 21.105 21 20 21H17C8.716 21 2 14.284 2 6V5H3Z" stroke="currentColor" stroke-width="2"/>
-                                </svg>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Phone</h4>
-                                <p>+1 (407) 917-5782</p>
-                            </div>
-                        </a> -->
                         <a href="https://github.com/varun-jasti" target="_blank" rel="noopener noreferrer" class="contact-method">
                             <div class="contact-icon">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -759,7 +744,7 @@ results = model.train(<br>
                                 <p>linkedin.com/in/varun-kumar-jasti</p>
                             </div>
                         </a>
-                        <!-- <div class="contact-method">
+                        <div class="contact-method contact-method-static">
                             <div class="contact-icon">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" stroke="currentColor" stroke-width="2"/>
@@ -769,12 +754,14 @@ results = model.train(<br>
                                 <h4>Location</h4>
                                 <p>Orlando, Florida, USA</p>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -790,6 +777,25 @@ results = model.train(<br>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Viswanadh Varun Kumar Jasti",
+      "url": "https://varun-jasti.github.io/",
+      "image": "https://varun-jasti.github.io/profile-photo.jpg",
+      "jobTitle": "Front-End Developer and AI/ML Researcher",
+      "email": "mailto:varunjasti3@gmail.com",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Central Florida"
+      },
+      "sameAs": [
+        "https://github.com/varun-jasti",
+        "https://www.linkedin.com/in/varun-kumar-jasti"
+      ]
+    }
+    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
